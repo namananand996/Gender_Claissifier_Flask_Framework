@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="jumbotron" style="background-color: #4834DF">
+        <h1 style="color:#EAF0F1; text-align: center">Gender Classifier App</h1>
+    </div>
+
+
+    <div>
+        <form action="{{url_for('predict')}}" method="POST" >
+            <input type="text" name="namequery" class="form-control">
+            <br>
+            <input type="submit" value="Submit" class="btn" name="predict">
+        </form>
+    </div>
+
+
+</div>
+
+
+
+{% endblock %}

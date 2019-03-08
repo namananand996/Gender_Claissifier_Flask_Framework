@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="jumbotron" style="background-color:#4834DF">
+        <h1 style="text-align:center; color: #EAF0F1">Result</h1>
+    </div>
+
+    <div style="text-align:center;padding-top: 100px">
+        {%if prediction == 1%}
+        <h1>{{name}} is Male</h1>
+        {% else %}
+        <h1>{{name}} is Female</h1>
+        {% endif %}
+    </div>
+
+</div>
+
+
+{% endblock %}
